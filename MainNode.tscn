@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://clhmboyoauo78"]
+
+[node name="MainWindow" type="Node"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0.250854, 0.683334)
+scale = Vector2(1, 1)
+anchor_mode = 0
+editor_draw_limits = true
+editor_draw_drag_margin = true
