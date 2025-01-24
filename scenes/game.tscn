@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://dbrha4q4l1f0p"]
+[gd_scene load_steps=6 format=3 uid="uid://do4py8yq34m06"]
 
-[ext_resource type="PackedScene" uid="uid://djrasrgdj5ydy" path="res://flipper.tscn" id="1_oyngu"]
-[ext_resource type="Script" path="res://ball.gd" id="2_sru0l"]
+[ext_resource type="PackedScene" uid="uid://cnveaascmnwn" path="res://scenes/flipper.tscn" id="1_oyngu"]
+[ext_resource type="Script" path="res://scripts/ball.gd" id="2_sru0l"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vxo2t"]
 bounce = 1.0
@@ -26,6 +26,7 @@ script = ExtResource("2_sru0l")
 shape = SubResource("CircleShape2D_ux70h")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+modulate = Color(0, 0, 0, 1)
 position = Vector2(12, 386)
 scale = Vector2(1, 38.32)
 
