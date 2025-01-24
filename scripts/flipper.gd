@@ -1,3 +1,4 @@
+class_name Paddle
 extends CharacterBody2D
 
 @export var max_angle_deg := 15
