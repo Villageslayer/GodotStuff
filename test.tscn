@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://oahw4hlwoj2a"]
 
 [ext_resource type="PackedScene" uid="uid://6evqkbiendx0" path="res://assets/Bubble/Ball.tscn" id="1_a0651"]
-[ext_resource type="PackedScene" uid="uid://dkep35pdwc788" path="res://assets/paddle_left/paddle_left.tscn" id="2_v2koo"]
-[ext_resource type="Script" path="res://assets/paddle_left/paddle_left.gd" id="3_qh4dt"]
+[ext_resource type="PackedScene" uid="uid://dkep35pdwc788" path="res://assets/flipper_left/flipper_left.tscn" id="2_v2koo"]
+[ext_resource type="PackedScene" uid="uid://dmgqwaigkul1y" path="res://assets/flipper_right/flipper_right.tscn" id="3_vde1m"]
 
 [node name="Scene" type="Node2D"]
 
@@ -10,5 +10,7 @@
 position = Vector2(380, 182)
 
 [node name="paddle_left" parent="." instance=ExtResource("2_v2koo")]
-position = Vector2(353, 309)
-script = ExtResource("3_qh4dt")
+position = Vector2(271, 298)
+
+[node name="FlipperRight" parent="." instance=ExtResource("3_vde1m")]
+position = Vector2(493, 296)

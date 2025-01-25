@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://rxg1l7dtt674"]
 
-[ext_resource type="Script" path="res://assets/paddle_left/paddle_left.gd" id="1_8g202"]
+[ext_resource type="Script" path="res://assets/flipper_left/flipper_left.gd" id="1_8g202"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7o06m"]
 height = 88.0

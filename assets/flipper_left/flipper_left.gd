@@ -1,4 +1,4 @@
-class_name flipper_left
+class_name FlipperLeft
 extends CharacterBody2D
 
 @export var max_angle := -PI/4
@@ -6,7 +6,6 @@ extends CharacterBody2D
 @export var speed := 40
 
 func _physics_process(delta: float) -> void:
-
 	if Input.is_action_pressed("ui_left"):
 		rotation -= (speed * delta)
 	else:

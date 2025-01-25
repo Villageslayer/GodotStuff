@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://0v6wdiwwdxtq"]
 
-[ext_resource type="Script" path="res://assets/paddle_left/paddle_left.gd" id="1_2djj5"]
+[ext_resource type="Script" path="res://assets/flipper_left/flipper_left.gd" id="1_2djj5"]
 [ext_resource type="Script" path="res://scripts/flipper_base.gd" id="1_b364x"]
 [ext_resource type="Script" path="res://scripts/paddle.gd" id="2_xcoky"]
 

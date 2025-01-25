@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3ve7x8sxsr6"
-path="res://.godot/imported/paddle_right.png-bf8f5eb8e95e28e26d2104d14c1477c5.ctex"
+uid="uid://dqs11bkespi0f"
+path="res://.godot/imported/flipper_left.png-cd674e775f784071b5e6ac2e13b8713e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/paddle_right.png"
-dest_files=["res://.godot/imported/paddle_right.png-bf8f5eb8e95e28e26d2104d14c1477c5.ctex"]
+source_file="res://assets/flipper_left/flipper_left.png"
+dest_files=["res://.godot/imported/flipper_left.png-cd674e775f784071b5e6ac2e13b8713e.ctex"]
 
 [params]
 

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmgqwaigkul1y"]
+
+[ext_resource type="Texture2D" uid="uid://c3ve7x8sxsr6" path="res://assets/flipper_right/flipper_right.png" id="1_aeyht"]
+[ext_resource type="Script" path="res://assets/flipper_right/flipper_right.gd" id="1_gk68m"]
+
+[node name="FlipperRight" type="CharacterBody2D"]
+script = ExtResource("1_gk68m")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-32, 0)
+scale = Vector2(-1, 1)
+polygon = PackedVector2Array(64, -32, 64, -16, -32, 32, -48, 32, -56, 24, -64, 16, -64, 8, -64, -8, -56, -24, -40, -32)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-32, 0)
+texture = ExtResource("1_aeyht")

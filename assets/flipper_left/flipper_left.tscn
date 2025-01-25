@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://dkep35pdwc788"]
+[gd_scene load_steps=3 format=3 uid="uid://dkep35pdwc788"]
 
-[ext_resource type="Texture2D" uid="uid://dqs11bkespi0f" path="res://assets/paddle_left/paddle_left.png" id="1_ma3uh"]
+[ext_resource type="Texture2D" uid="uid://dqs11bkespi0f" path="res://assets/flipper_left/flipper_left.png" id="1_ma3uh"]
+[ext_resource type="Script" path="res://assets/flipper_left/flipper_left.gd" id="1_otvlr"]
 
 [node name="paddle_left" type="CharacterBody2D"]
+script = ExtResource("1_otvlr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(32, 0)
