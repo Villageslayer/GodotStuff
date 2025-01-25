@@ -1,8 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://do4py8yq34m06"]
+[gd_scene load_steps=7 format=3 uid="uid://cuv1y0hjqptpr"]
 
-[ext_resource type="PackedScene" uid="uid://cnveaascmnwn" path="res://scenes/flipper_right.tscn" id="1_oyngu"]
-[ext_resource type="PackedScene" uid="uid://g0toaoesjsvx" path="res://scenes/flipper_left.tscn" id="2_et21y"]
+[ext_resource type="PackedScene" uid="uid://0v6wdiwwdxtq" path="res://flipper.tscn" id="1_oyngu"]
 [ext_resource type="Script" path="res://scripts/ball.gd" id="2_sru0l"]
+[ext_resource type="Script" path="res://scripts/flipper.gd" id="3_tfefr"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vxo2t"]
 bounce = 1.0
@@ -27,7 +27,6 @@ script = ExtResource("2_sru0l")
 shape = SubResource("CircleShape2D_ux70h")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-modulate = Color(0, 0, 0, 1)
 position = Vector2(12, 386)
 scale = Vector2(1, 38.32)
 
@@ -51,6 +50,23 @@ shape = SubResource("RectangleShape2D_8irq7")
 position = Vector2(-28, 1.01775)
 shape = SubResource("RectangleShape2D_8irq7")
 
-[node name="FlipperLeft" parent="." instance=ExtResource("2_et21y")]
-
 [node name="Flipper" parent="." instance=ExtResource("1_oyngu")]
+position = Vector2(293, 677)
+rotation = 3.14159
+script = ExtResource("3_tfefr")
+max_angle_deg = 15
+min_angle_deg = 45
+speed = 20
+is_left = false
+
+[node name="Paddle" parent="Flipper" index="2"]
+script = null
+
+[node name="Flipper2" parent="." instance=ExtResource("1_oyngu")]
+position = Vector2(134, 677)
+
+[node name="Paddle" parent="Flipper2" index="2"]
+script = null
+
+[editable path="Flipper"]
+[editable path="Flipper2"]

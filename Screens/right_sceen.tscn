@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c10x6h3pw5gg3"]
+
+[ext_resource type="Script" path="res://Objects/Screens/right_sceen.gd" id="1_gwcn5"]
+[ext_resource type="Texture2D" uid="uid://mbh4p81oreio" path="res://assets/dirt_bg_W180.png" id="2_38f4w"]
+
+[node name="RightSceen" type="Node2D"]
+script = ExtResource("1_gwcn5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_38f4w")
+centered = false

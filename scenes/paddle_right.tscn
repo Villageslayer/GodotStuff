@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://dofcm15qx13cv"]
+
+[ext_resource type="PackedScene" uid="uid://rxg1l7dtt674" path="res://scenes/paddle.tscn" id="1_yhsxj"]
+
+[node name="PaddleRight" instance=ExtResource("1_yhsxj")]

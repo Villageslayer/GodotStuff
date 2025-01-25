@@ -4,11 +4,12 @@ extends CharacterBody2D
 @export var max_angle_deg := 15
 @export var min_angle_deg := 45
 @export var speed := 20
-@export var is_left := true
+@export var is_left := false
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	self.is_left = false
 	pass # Replace with function body.
 
 

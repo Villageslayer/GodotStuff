@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cnveaascmnwn"]
+[gd_scene load_steps=6 format=3 uid="uid://0v6wdiwwdxtq"]
 
 [ext_resource type="Script" path="res://scripts/flipper.gd" id="1_2djj5"]
-[ext_resource type="Script" path="res://scripts/Paddle.gd" id="2_fvadx"]
+[ext_resource type="Script" path="res://scripts/flipper_base.gd" id="1_b364x"]
+[ext_resource type="Script" path="res://scripts/paddle.gd" id="2_xcoky"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_87ldt"]
 
@@ -10,6 +11,7 @@ height = 88.0
 
 [node name="Flipper" type="Node2D"]
 position = Vector2(61, 677)
+script = ExtResource("1_b364x")
 
 [node name="Anchor" type="StaticBody2D" parent="."]
 
@@ -34,5 +36,5 @@ position = Vector2(34, 0)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_7o06m")
 
-[node name="Sprite2D" type="Sprite2D" parent="Paddle/CollisionShape2D"]
-script = ExtResource("2_fvadx")
+[node name="Sprite2D" type="Sprite2D" parent="Paddle"]
+script = ExtResource("2_xcoky")
