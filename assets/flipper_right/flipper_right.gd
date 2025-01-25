@@ -2,7 +2,7 @@ class_name FlipperRight
 extends CharacterBody2D
 
 @export var max_angle := PI/4
-@export var min_angle := -PI/4
+@export var min_angle := 0
 @export var speed := 40
 
 func _physics_process(delta: float) -> void:
