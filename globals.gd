@@ -23,7 +23,7 @@ class Layout:
 		func _init():
 			self.left = Vector2(0, 0)
 			self.game = Vector2(180, 0)
-			self.right = Vector2(180 + 360, 0)
+			self.right = Vector2(720-180, 0)
 
 	var bounds: Bounds
 	var offsets: Offsets
