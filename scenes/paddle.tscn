@@ -28,8 +28,6 @@ func _process(delta: float) -> void:
 
 [node name="Paddle" type="CharacterBody2D"]
 script = ExtResource("1_8g202")
-max_angle_deg = 5
-min_angle_deg = 15
 speed = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
