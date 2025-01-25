@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://0v6wdiwwdxtq" path="res://flipper.tscn" id="1_oyngu"]
 [ext_resource type="Script" path="res://scripts/ball.gd" id="2_sru0l"]
-[ext_resource type="Script" path="res://scripts/flipper.gd" id="3_tfefr"]
+[ext_resource type="Script" path="res://assets/paddle_left/paddle_left.gd" id="3_tfefr"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vxo2t"]
 bounce = 1.0

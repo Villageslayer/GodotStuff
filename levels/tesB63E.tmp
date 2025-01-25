@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://wdfqua0bnndk"]
+
+[ext_resource type="PackedScene" uid="uid://dkep35pdwc788" path="res://assets/paddle_left/paddle_left.tscn" id="1_uufj4"]
+[ext_resource type="PackedScene" uid="uid://6evqkbiendx0" path="res://assets/Bubble/Ball.tscn" id="3_loghy"]
+
+[sub_resource type="GDScript" id="GDScript_pbs7i"]
+script/source = "
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="TestLevel" type="Node2D"]
+
+[node name="paddle_left" parent="." instance=ExtResource("1_uufj4")]
+position = Vector2(333, 347)
+script = SubResource("GDScript_pbs7i")
+
+[node name="Ball" parent="." instance=ExtResource("3_loghy")]
+position = Vector2(364, 253)
