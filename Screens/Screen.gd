@@ -9,6 +9,7 @@ var bg_alt_texture = preload("res://assets/GameMock.png")
 var border_color = Color(0, 1, 0)  # Green color
 var line_thickness = 2.0
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.

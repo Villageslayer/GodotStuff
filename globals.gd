@@ -23,7 +23,7 @@ class Layout:
 		func _init():
 			self.left = Vector2(0, 0)
 			self.game = Vector2(180, 0)
-			self.right = Vector2(180 + 360, 0)
+			self.right = Vector2(720-180, 0)
 
 	var bounds: Bounds
 	var offsets: Offsets
@@ -36,12 +36,12 @@ class Layout:
 var layout: Layout
 var bounds: Layout.Bounds
 var offsets: Layout.Offsets 
+func _init() -> void:
+	self.layout = Layout.new()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	layout = Layout.new()
-
-	self.layout = layout
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

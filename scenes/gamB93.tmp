@@ -1,11 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://do4py8yq34m06"]
+[gd_scene load_steps=6 format=3 uid="uid://do4py8yq34m06"]
 
 [ext_resource type="PackedScene" uid="uid://cgyb54k07iptv" path="res://Screens/left_screen.tscn" id="1_4tp7k"]
 [ext_resource type="PackedScene" uid="uid://dw3j61wwv5jl4" path="res://Screens/game_screen.tscn" id="2_cfd87"]
 [ext_resource type="PackedScene" uid="uid://c10x6h3pw5gg3" path="res://Screens/right_sceen.tscn" id="3_fjk0l"]
 [ext_resource type="PackedScene" uid="uid://dkep35pdwc788" path="res://assets/flipper_left/flipper_left.tscn" id="3_uigog"]
 [ext_resource type="PackedScene" uid="uid://dmgqwaigkul1y" path="res://assets/flipper_right/flipper_right.tscn" id="4_avfpv"]
-[ext_resource type="PackedScene" uid="uid://6evqkbiendx0" path="res://assets/Bubble/Ball.tscn" id="5_4oe1o"]
 
 [node name="Game" type="Node2D"]
 
@@ -20,9 +19,7 @@ min_angle = 0.0
 
 [node name="FlipperRight" parent="GameScreen" instance=ExtResource("4_avfpv")]
 z_index = 1
+position = Vector2(324, 373)
 min_angle = 0.0
-
-[node name="Ball" parent="GameScreen" instance=ExtResource("5_4oe1o")]
-position = Vector2(180, 0)
 
 [node name="RightSceen" parent="." instance=ExtResource("3_fjk0l")]

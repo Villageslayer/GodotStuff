@@ -27,8 +27,6 @@ angular_limit_upper = 2.19039
 
 [node name="Paddle" type="CharacterBody2D" parent="."]
 script = ExtResource("1_2djj5")
-max_angle_deg = 5
-min_angle_deg = 15
 speed = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Paddle"]
