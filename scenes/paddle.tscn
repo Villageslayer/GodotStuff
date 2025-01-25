@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://rxg1l7dtt674"]
+
+[ext_resource type="Script" path="res://scripts/flipper.gd" id="1_8g202"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7o06m"]
+height = 88.0
+
+[sub_resource type="GDScript" id="GDScript_7bou0"]
+script/source = "extends Sprite2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	var parent = get_parent()
+	# Load the texture from the file system
+	if parent.is_left:
+		self.texture = load(\"res://assets/paddle_right.png\")
+	else:
+		self.texture = load(\"res://assets/paddle_right.png\")
+	# Assign the texture to the Sprite node
+	self.texture = texture
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="Paddle" type="CharacterBody2D"]
+script = ExtResource("1_8g202")
+max_angle_deg = 5
+min_angle_deg = 15
+speed = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(34, 0)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_7o06m")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+script = SubResource("GDScript_7bou0")

@@ -25,6 +25,10 @@ window/size/borderless=true
 
 project/assembly_name="Pinball"
 
+[navigation]
+
+2d/size/borderless=false
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
