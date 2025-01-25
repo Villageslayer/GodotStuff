@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dr0hu46m58qf"]
+
+[ext_resource type="Texture2D" uid="uid://dt1t4wd5u1cds" path="res://assets/bg_underwater.png" id="1_pn5nn"]
+[ext_resource type="Texture2D" uid="uid://dux7q7kjse0it" path="res://assets/surface.png" id="2_nd7bf"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="WaterSurface" type="Sprite2D" parent="."]
+scale = Vector2(1.11111, 1.97531)
+texture = ExtResource("1_pn5nn")
+centered = false
+
+[node name="top" type="Sprite2D" parent="."]
+scale = Vector2(1.11111, 1)
+texture = ExtResource("2_nd7bf")
+centered = false

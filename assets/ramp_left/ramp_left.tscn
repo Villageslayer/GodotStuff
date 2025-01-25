@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://coyha2755k62r"]
+
+[ext_resource type="Texture2D" uid="uid://qtfcqofhe3og" path="res://assets/ramp_left/ramp_left.png" id="1_g6h08"]
+
+[node name="ramp_left" type="RigidBody2D"]
+gravity_scale = 0.0
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_g6h08")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-64, -64, -64, 64, 64, 64)

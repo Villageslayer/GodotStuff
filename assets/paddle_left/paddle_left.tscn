@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkep35pdwc788"]
+
+[ext_resource type="Texture2D" uid="uid://dqs11bkespi0f" path="res://assets/paddle_left/paddle_left.png" id="1_ma3uh"]
+
+[node name="paddle_left" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ma3uh")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(64, -32, 64, -16, -32, 32, -48, 32, -56, 24, -64, 16, -64, 8, -64, -8, -56, -24, -40, -32)

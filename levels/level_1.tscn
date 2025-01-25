@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://df8l8bnxftrc7"]
+
+[ext_resource type="PackedScene" uid="uid://dr0hu46m58qf" path="res://background_static.tscn" id="1_snw0s"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_8of6k"]
+a = Vector2(400, 0)
+b = Vector2(400, 800)
+
+[node name="Node" type="Node"]
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("1_snw0s")]
+
+[node name="LeftMargin" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftMargin"]
+shape = SubResource("SegmentShape2D_8of6k")
+
+[node name="RightMargin" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightMargin"]
+shape = SubResource("SegmentShape2D_8of6k")
