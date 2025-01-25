@@ -37,8 +37,7 @@ var layout: Layout
 var bounds: Layout.Bounds
 var offsets: Layout.Offsets 
 func _init() -> void:
-	layout = Layout.new()
-	self.layout = layout
+	self.layout = Layout.new()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
