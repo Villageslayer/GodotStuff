@@ -1,0 +1,104 @@
+[gd_scene load_steps=9 format=3 uid="uid://biehenkgu3hq3"]
+
+[ext_resource type="Script" path="res://levels/ice_fishing.gd" id="1_3506n"]
+[ext_resource type="PackedScene" uid="uid://6evqkbiendx0" path="res://assets/Bubble/Ball.tscn" id="1_a0651"]
+[ext_resource type="PackedScene" uid="uid://dkep35pdwc788" path="res://assets/flipper_left/flipper_left.tscn" id="2_v2koo"]
+[ext_resource type="PackedScene" uid="uid://dmgqwaigkul1y" path="res://assets/flipper_right/flipper_right.tscn" id="3_vde1m"]
+[ext_resource type="PackedScene" uid="uid://crv3lji4mptq8" path="res://assets/platform/wall.tscn" id="4_0jluf"]
+[ext_resource type="PackedScene" uid="uid://cnvkohwafsgdp" path="res://assets/score_counter/score.tscn" id="6_4cy8n"]
+[ext_resource type="PackedScene" uid="uid://cdlhw8f8okw68" path="res://assets/bumper/bumper_trio.tscn" id="8_ghqam"]
+[ext_resource type="Texture2D" uid="uid://dux7q7kjse0it" path="res://assets/surface.png" id="8_x7r73"]
+
+[node name="Scene" type="Node2D"]
+position = Vector2(-57, -13)
+script = ExtResource("1_3506n")
+
+[node name="Ball" parent="." instance=ExtResource("1_a0651")]
+position = Vector2(327, 33)
+mass = 10.0
+gravity_scale = 1.0
+
+[node name="paddle_left" parent="." instance=ExtResource("2_v2koo")]
+z_index = 1
+position = Vector2(296, 342)
+rotation = 0.785398
+
+[node name="FlipperRight" parent="." instance=ExtResource("3_vde1m")]
+z_index = 1
+position = Vector2(403, 341)
+rotation = -0.785398
+
+[node name="Walls" type="Node2D" parent="."]
+
+[node name="Wall6" parent="Walls" instance=ExtResource("4_0jluf")]
+position = Vector2(610, 261)
+
+[node name="Wall7" parent="Walls" instance=ExtResource("4_0jluf")]
+position = Vector2(1103, -156)
+rotation = -0.785398
+
+[node name="Wall8" parent="Walls" instance=ExtResource("4_0jluf")]
+position = Vector2(-436, -145)
+rotation = 0.785398
+
+[node name="Wall9" parent="Walls" instance=ExtResource("4_0jluf")]
+position = Vector2(203, 4)
+rotation = 1.5708
+
+[node name="Wall10" parent="Walls" instance=ExtResource("4_0jluf")]
+position = Vector2(506, 9)
+rotation = 1.5708
+
+[node name="Wall12" parent="Walls" instance=ExtResource("4_0jluf")]
+position = Vector2(356, -150)
+
+[node name="Wall13" parent="Walls" instance=ExtResource("4_0jluf")]
+position = Vector2(91, 260)
+
+[node name="Wall14" parent="Walls" instance=ExtResource("4_0jluf")]
+position = Vector2(506, 267)
+rotation = 1.5708
+
+[node name="Wall15" parent="Walls" instance=ExtResource("4_0jluf")]
+position = Vector2(203, 261)
+rotation = 1.5708
+
+[node name="Wall11" parent="Walls" instance=ExtResource("4_0jluf")]
+position = Vector2(-203, -191)
+scale = Vector2(0.2, 0.2)
+
+[node name="Wall16" parent="Walls" instance=ExtResource("4_0jluf")]
+position = Vector2(285, 323)
+rotation = 0.785398
+scale = Vector2(0.25, 0.25)
+
+[node name="Wall17" parent="Walls" instance=ExtResource("4_0jluf")]
+position = Vector2(414, 321)
+rotation = -0.785398
+scale = Vector2(0.25, 0.25)
+
+[node name="Score" parent="." instance=ExtResource("6_4cy8n")]
+offset_left = 144.0
+offset_top = 140.0
+offset_right = 154.0
+offset_bottom = 163.0
+
+[node name="Surface" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(355, 281)
+rotation = 3.14159
+texture = ExtResource("8_x7r73")
+
+[node name="FlipperRight2" parent="." instance=ExtResource("3_vde1m")]
+z_index = 1
+position = Vector2(476, 79)
+rotation = -0.785398
+min_angle = -1.57
+
+[node name="BumperTrio" parent="." instance=ExtResource("8_ghqam")]
+position = Vector2(350, 115)
+
+[node name="paddle_left2" parent="." instance=ExtResource("2_v2koo")]
+z_index = 1
+position = Vector2(221, 81)
+rotation = 0.785398

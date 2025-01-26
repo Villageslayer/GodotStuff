@@ -24,4 +24,3 @@ angular_limit_upper = 2.19039
 script = ExtResource("2_ai8wy")
 max_angle_deg = 15
 min_angle_deg = 45
-is_left = false

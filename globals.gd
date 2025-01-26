@@ -36,12 +36,12 @@ class Layout:
 var layout: Layout
 var bounds: Layout.Bounds
 var offsets: Layout.Offsets 
-func _init() -> void:
-	self.layout = Layout.new()
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
+	layout = Layout.new()
+
+	self.layout = layout
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

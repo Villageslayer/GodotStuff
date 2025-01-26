@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnvkohwafsgdp"]
+
+[ext_resource type="Script" path="res://assets/score_counter/score.gd" id="1_yarwk"]
+
+[node name="Score" type="Label"]
+text = "0"
+script = ExtResource("1_yarwk")

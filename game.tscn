@@ -1,3 +1,32 @@
-[gd_scene format=3 uid="uid://cuv1y0hjqptpr"]
+[gd_scene load_steps=6 format=3 uid="uid://l1otdviyjdpl"]
 
-[node name="Node2D2" type="Node2D"]
+[ext_resource type="PackedScene" uid="uid://cgyb54k07iptv" path="res://Screens/left_screen.tscn" id="1_4tp7k"]
+[ext_resource type="PackedScene" uid="uid://dw3j61wwv5jl4" path="res://Screens/game_screen.tscn" id="2_cfd87"]
+[ext_resource type="PackedScene" uid="uid://df8l8bnxftrc7" path="res://main_level.tscn" id="3_607ja"]
+[ext_resource type="PackedScene" uid="uid://c10x6h3pw5gg3" path="res://Screens/right_sceen.tscn" id="3_fjk0l"]
+[ext_resource type="Texture2D" uid="uid://bn2dq304c6n5g" path="res://assets/SidePanel.png" id="5_58gu0"]
+
+[node name="Game" type="Node2D"]
+
+[node name="LeftScreen" parent="." instance=ExtResource("1_4tp7k")]
+
+[node name="RightSceen" parent="." instance=ExtResource("3_fjk0l")]
+
+[node name="GameScreen" parent="." instance=ExtResource("2_cfd87")]
+
+[node name="main_level" parent="GameScreen" instance=ExtResource("3_607ja")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+offset = Vector2(90, 203)
+transform = Transform2D(1, 0, 0, 1, 90, 203)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+scale = Vector2(-1, -1)
+texture = ExtResource("5_58gu0")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+offset = Vector2(630, 203)
+transform = Transform2D(1, 0, 0, 1, 630, 203)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer2"]
+texture = ExtResource("5_58gu0")

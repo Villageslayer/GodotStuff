@@ -3,13 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://dqs11bkespi0f" path="res://assets/flipper_left/flipper_left.png" id="1_ma3uh"]
 [ext_resource type="Script" path="res://assets/flipper_left/flipper_left.gd" id="1_otvlr"]
 
-[node name="paddle_left" type="CharacterBody2D"]
+[node name="FlipperLeft" type="CharacterBody2D"]
 script = ExtResource("1_otvlr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(32, 0)
+position = Vector2(16.2, 0.600001)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_ma3uh")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(32, 0)
+position = Vector2(16.2, 0.600001)
+scale = Vector2(0.5, 0.5)
 polygon = PackedVector2Array(64, -32, 64, -16, -32, 32, -48, 32, -56, 24, -64, 16, -64, 8, -64, -8, -56, -24, -40, -32)

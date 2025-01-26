@@ -6,16 +6,14 @@ extends Screen
 func _ready():
 	self.dimensions = Globals.layout.bounds.game
 	self.position = Globals.layout.offsets.game
-	self.bg_texture = self.bg_alt_texture
-	self.add_bg(self.bg_texture)
+	#self.bg_texture = preload("res://assets/bg_underwater.png")
+	#self.add_bg(self.bg_texture)
 
 	# Add collision boundaries
-	add_collision_boundary(Vector2(self.position.x, self.position.y), Vector2(self.position.x, self.position.y + self.dimensions.y))  # Left
-	add_collision_boundary(Vector2(self.position.x + self.dimensions.x, self.position.y), Vector2(self.position.x + self.dimensions.x, self.position.y + self.dimensions.y))  # Right
-	add_collision_boundary(Vector2(self.position.x, self.position.y), Vector2(self.position.x + self.dimensions.x, self.position.y))  # Top
-	add_collision_boundary(Vector2(self.position.x, self.position.y + self.dimensions.y), Vector2(self.position.x + self.dimensions.x, self.position.y + self.dimensions.y))  # Bottom
-
-
+	#self.add_collision_boundary(Vector2(self.position.x, self.position.y), Vector2(self.position.x, self.position.y + self.dimensions.y))  # Left
+	#self.add_collision_boundary(Vector2(self.position.x + self.dimensions.x, self.position.y), Vector2(self.position.x + self.dimensions.x, self.position.y + self.dimensions.y))  # Right
+	#self.add_collision_boundary(Vector2(self.position.x, self.position.y), Vector2(self.position.x + self.dimensions.x, self.position.y))  # Top
+	#self.add_collision_boundary(Vector2(self.position.x, self.position.y + self.dimensions.y), Vector2(self.position.x + self.dimensions.x, self.position.y + self.dimensions.y))  # Bottom
 
 
 func add_collision_boundary(start_point: Vector2, end_point: Vector2):
